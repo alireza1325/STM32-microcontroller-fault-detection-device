@@ -1,5 +1,7 @@
 # STM32-microcontroller-fault-detection-device
-Development of a smart gadget for fault detection in rotating machines by the implementation of Mahalanobis Distance (MD) on an MCU
+Development of a smart gadget for fault detection in rotating machines by the implementation of Mahalanobis Distance (MD) on an MCU.
+
+The provided zip file is the source code of MCU to implement the algorithm as describe in the following sentences. It should be noted that STM32CubeIDE and STM32CubeMX were used to program the microcontroller.
 
 Unlike euclidian distance, Mahalanobis Distance considers correlation in the data. So the MD was implemented in MCU to detect the distance between unseen data and the machine's healthy data. If the distance was greater than the threshold, the signal will be considered unhealthy. 29 features were extracted from raw vibration data and used to calculate the MD of data.
 
